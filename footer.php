@@ -16,15 +16,10 @@
     <?php get_template_part( 'wobt-template-parts/footer/footer', 'widgets' ); ?>
         <div class="wobt-footer-horizontal-menu-container">
             <span>
-    <?php $blog_info = get_bloginfo( 'name' ); ?>
+                <?php $blog_info = get_bloginfo( 'name' ); ?>
                 <?php if ( ! empty( $blog_info ) ) : ?>
                     <a class="site-name" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
                 <?php endif; ?>
-                <?php
-                if ( function_exists( 'the_privacy_policy_link' ) ) {
-                    the_privacy_policy_link( '', '<span role="separator" aria-hidden="true"></span>' );
-                }
-                ?>
             </span>
             <span>|</span>
             <?php if ( has_nav_menu( 'wobt-footer-menu' ) ) : ?>

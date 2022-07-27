@@ -761,14 +761,14 @@ span {
 .wobt-menu-dropdown-wrapper {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: flex-start;
 }
 
 .wobt-menu-fixed {
   position: fixed;
   right: 20px;
   height: 0;
-  top: 220px;
+  top: 0;
   animation: fade-in .3s;
   background: rgba(0, 0, 0, .9);
   z-index: 5;

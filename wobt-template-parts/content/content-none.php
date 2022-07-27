@@ -8,6 +8,7 @@ if (isset($queries["s"]) && $queries["s"] !== '') {
     $search_query = $queries["s"];
 }
 
+if ($search_query !== '') {
 ?>
 <div class="wobt-not-found-container">
     <div class="box">
@@ -17,3 +18,5 @@ if (isset($queries["s"]) && $queries["s"] !== '') {
         </p>
     </div>
 </div>
+<?php
+}
