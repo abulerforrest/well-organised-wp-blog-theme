@@ -11,13 +11,15 @@ $current_user = wp_get_current_user();
 
 <?php if ( !is_page() ) : ?>
     <div class="entry-meta">
-        <?php if ((user_can( $current_user, 'administrator' )) && is_user_logged_in()) { ?>
         <?php
+        /* currently disabled
+        if ((user_can( $current_user, 'administrator' )) && is_user_logged_in()) { */ ?>
+        <?php
+        /*
             // Edit post link.
             edit_post_link(
                 sprintf(
                     wp_kses(
-                    /* translators: %s: Post title. Only visible to screen readers. */
                         wobt_get_text('single_edit_post'),
                         array(
                             'span' => array(
@@ -31,6 +33,7 @@ $current_user = wp_get_current_user();
                 '</button>'
             );
         }
+        */
         ?>
     </div><!-- .entry-meta -->
 <?php endif; ?>
